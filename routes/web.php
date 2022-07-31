@@ -17,3 +17,9 @@ Route::get('/', function () {
     broadcast(new \App\Events\MessageEvent('mesaj'));
     return view('welcome');
 });
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
+
+require __DIR__.'/auth.php';
