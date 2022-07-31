@@ -2,7 +2,8 @@
     "private": true,
     "scripts": {
         "dev": "vite",
-        "build": "vite build"
+        "build": "vite build",
+        "watch": "mix watch"
     },
     "devDependencies": {
         "axios": "^0.27",
@@ -10,5 +11,11 @@
         "lodash": "^4.17.19",
         "postcss": "^8.1.14",
         "vite": "^3.0.0"
+    },
+    "dependencies": {
+        "laravel-echo": "^1.13.0",
+        "laravel-mix": "^6.0.49",
+        "npm-watch": "^0.11.0",
+        "pusher-js": "^7.3.0"
     }
 }

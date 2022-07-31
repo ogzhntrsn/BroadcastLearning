@@ -129,4 +129,12 @@
             </div>
         </div>
     </body>
+
+    <script src="./js/app.js"></script>
+
+    <script>
+        let channel = window.Echo.channel('messages');
+        console.log(channel);
+    </script>
+
 </html>
