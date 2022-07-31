@@ -33,7 +33,7 @@ class MessageEvent implements ShouldBroadcast
      */
     public function broadcastOn()
     {
-        return new PrivateChannel('messages');
+        return new Channel('messages');
     }
 
     public function broadcastAs(){

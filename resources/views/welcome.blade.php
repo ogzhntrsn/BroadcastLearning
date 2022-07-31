@@ -134,7 +134,9 @@
 
     <script>
         let channel = window.Echo.channel('messages');
-        console.log(channel);
+        channel.listen('.Message', function (data){
+            console.log(data.message)
+        });
     </script>
 
 </html>
